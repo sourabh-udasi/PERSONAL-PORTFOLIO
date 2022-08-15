@@ -59,8 +59,8 @@ body {
 }
 
 .navbar a {
-  padding: 2rem;
-  font-size: 2rem;
+  padding: 2rem 0rem 2rem 0rem;
+  font-size: 1.5rem;
   background: #1a1a1a;
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -195,10 +195,35 @@ body {
 .card-content .card-footer .btn:hover {
   background-color: crimson;
 }
+
+@media only screen and (max-width: 910px) {
+  .project-cards .card {
+    width: 100%;
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 820px) {
+  .navbar a i {
+    padding: 0;
+  }
+  .navbar a span {
+    display: none;
+  }
+  .navbar a:hover {
+    padding-bottom: 2rem;
+  }
+}
 @media only screen and (max-width: 555px) {
   .project-cards .card {
     width: 100%;
     margin: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 402px) {
+  .project-cards .card .card-content .heading {
+    font-size: 1.5rem;
   }
 }
 
